@@ -17,17 +17,20 @@ Source0:	https://pypi.python.org/packages/source/F/Flask-Cache/Flask-Cache-%{ver
 # Source0-md5:	ab82a9cd0844891ccdb54fbb93fd6c59
 URL:		http://github.com/thadeusb/flask-cache
 BuildRequires:	rpm-pythonprov
-# if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	sphinx-pdg
-# when using /usr/bin/env or other in-place substitutions
-#BuildRequires:	sed >= 4.0
 %if %{with python2}
 BuildRequires:	python-distribute
+%if %{with tests}
+BuildRequires:	python-flask
+%endif
 %endif
 %if %{with python3}
 BuildRequires:	python3-distribute
 BuildRequires:	python3-modules
+%if %{with tests}
+BuildRequires:	python3-flask
+%endif
 %endif
 Requires:	python-modules
 BuildArch:	noarch
