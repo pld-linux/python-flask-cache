@@ -10,7 +10,7 @@ Summary:	Cache support to Flask application
 Summary(pl.UTF-8):	Wsparcie dla cache w aplikacjach Flask
 Name:		python-%{module}
 Version:	0.13.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-Cache/Flask-Cache-%{version}.tar.gz
