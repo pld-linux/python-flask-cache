@@ -17,7 +17,7 @@ Source0:	https://pypi.python.org/packages/source/F/Flask-Cache/Flask-Cache-%{ver
 # Source0-md5:	ab82a9cd0844891ccdb54fbb93fd6c59
 URL:		http://github.com/thadeusb/flask-cache
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	sphinx-pdg
 %if %{with python2}
 BuildRequires:	python-distribute
