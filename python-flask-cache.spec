@@ -26,7 +26,6 @@ BuildRequires:	python-flask
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-distribute
 BuildRequires:	python3-modules
 %if %{with tests}
 BuildRequires:	python3-flask
